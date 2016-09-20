@@ -1,0 +1,6 @@
+[submodule "resources/docs/1.0"]
+	path = resources/docs/1.0
+	url = git@github.com:lukepolo/laracart-docs.git
+[submodule "resources/docs/master"]
+	path = resources/docs/master
+	url = git@github.com:lukepolo/laracart-docs.git
