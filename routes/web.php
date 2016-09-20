@@ -21,6 +21,10 @@ function markdown($text)
 
 
 Route::get('/', 'DocsController@showRootPage');
+
+Route::resource('cart', 'CartController');
+Route::resource('cart/fee', 'CartFeeController');
+Auth::routes();
+
 Route::get('{version}/{page?}', 'DocsController@show');
-
-
+Route::get('/home', 'HomeController@index');

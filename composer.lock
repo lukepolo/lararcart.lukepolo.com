@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "e341d6e1edae3c2a05540a95f96050e2",
-    "content-hash": "e0f4f6895f7cae4ca05d52c72f1f7690",
+    "hash": "82312df5af9b2ea5a78216d8ae11c572",
+    "content-hash": "858bafafcc13a87354386ee95ed997ad",
     "packages": [
         {
             "name": "classpreloader/classpreloader",
@@ -658,6 +658,58 @@
                 "storage"
             ],
             "time": "2016-08-10 08:55:11"
+        },
+        {
+            "name": "lukepolo/laracart",
+            "version": "1.1.30",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/lukepolo/laracart.git",
+                "reference": "ea6b61bcc42130ab430a6f891a0dec449b30a735"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/lukepolo/laracart/zipball/ea6b61bcc42130ab430a6f891a0dec449b30a735",
+                "reference": "ea6b61bcc42130ab430a6f891a0dec449b30a735",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/support": "5.*",
+                "php": ">=5.5.9"
+            },
+            "require-dev": {
+                "codeclimate/php-test-reporter": "dev-master",
+                "mockery/mockery": "^0.9.4",
+                "orchestra/testbench": "~3.1",
+                "phpunit/phpunit": "4.*",
+                "psr/log": "1.0.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "LukePOLO\\LaraCart\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Luke Policinski",
+                    "email": "Luke@LukePOLO.com",
+                    "homepage": "http://LukePOLO.com"
+                }
+            ],
+            "description": "A simple cart for Laravel",
+            "homepage": "https://github.com/lukepolo/laracart",
+            "keywords": [
+                "cart",
+                "laravel",
+                "shopping",
+                "shopping cart"
+            ],
+            "time": "2016-08-19 16:50:34"
         },
         {
             "name": "monolog/monolog",
