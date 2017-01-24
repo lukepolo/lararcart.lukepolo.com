@@ -37,7 +37,9 @@ class CartFeeController extends Controller
      */
     public function store(Request $request)
     {
-        LaraCart::addFee('deliveryFee', 5);
+//        LaraCart::addFee('deliveryFee', 5);
+
+        LaraCart::destroyCart();
 
         return back();
     }

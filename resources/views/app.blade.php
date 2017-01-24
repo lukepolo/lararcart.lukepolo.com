@@ -4,9 +4,7 @@
         <meta charset="utf-8">
         <title>{{ isset($title) ? $title . ' - ' : null }}LaraCart</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <meta name="author" content="Taylor Otwell">
-        <meta name="description" content="Laravel - The PHP framework for web artisans.">
-        <meta name="keywords" content="laravel, php, framework, web, artisans, taylor otwell">
+        <meta name="description" content="LaraCart - A shopping cart for Laravel">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
         <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
