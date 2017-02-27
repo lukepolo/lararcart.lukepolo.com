@@ -294,3 +294,33 @@ pre[class*="language-"] {
 blockquote {
   font-size: 14px;
 }
+
+table {
+  display: block;
+  width: 100%;
+  overflow: auto;
+  margin-top: 0;
+  margin-bottom: 16px;
+  border-spacing: 0;
+  border-collapse: collapse;
+  th {
+    padding: 6px 13px;
+    border: 1px solid #ddd;
+    font-weight: 600;
+  }
+
+  tbody {
+    tr {
+      background-color: #fff;
+      border-top: 1px solid #ccc;
+      td {
+        padding: 6px 13px;
+        border: 1px solid #ddd;
+      }
+    }
+
+    tr:nth-child(2n) {
+      background-color: #fafafa;
+    }
+  }
+}
