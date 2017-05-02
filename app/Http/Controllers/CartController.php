@@ -6,6 +6,8 @@ use App\Http\Requests;
 use Faker\Factory;
 use Illuminate\Http\Request;
 use LaraCart;
+use function rand;
+use function str_random;
 
 class CartController extends Controller
 {
@@ -20,30 +22,20 @@ class CartController extends Controller
     }
 
     /**
-     * Show the form for creating a new resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
-    public function create()
-    {
-        //
-    }
-
-    /**
      * Store a newly created resource in storage.
      *
      * @param  \Illuminate\Http\Request $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
+    public function add(Request $request)
     {
         $faker = Factory::create();
 
         LaraCart::add(
-            str_random(10),
+            str_random(),
             $name = $faker->name,
-            $qty = $faker->numberBetween(0, 10),
-            $price = $faker->numberBetween(0, 10),
+            $qty = $faker->numberBetween(1, 10),
+            $price = $faker->numberBetween(1, 10),
             $options = [
                 'color' => $faker->colorName
             ],
@@ -55,47 +47,22 @@ class CartController extends Controller
     }
 
     /**
-     * Display the specified resource.
+     * Store a newly created resource in storage.
      *
-     * @param  int $id
+     * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function show($id)
+    public function addFee(Request $request)
     {
-        //
+        LaraCart::addFee('deliveryFee', 5);
+
+        return back();
     }
 
-    /**
-     * Show the form for editing the specified resource.
-     *
-     * @param  int $id
-     * @return \Illuminate\Http\Response
-     */
-    public function edit($id)
+    public function destroy()
     {
-        //
-    }
+        LaraCart::destroyCart();
 
-    /**
-     * Update the specified resource in storage.
-     *
-     * @param  \Illuminate\Http\Request $request
-     * @param  int $id
-     * @return \Illuminate\Http\Response
-     */
-    public function update(Request $request, $id)
-    {
-        //
-    }
-
-    /**
-     * Remove the specified resource from storage.
-     *
-     * @param  int $id
-     * @return \Illuminate\Http\Response
-     */
-    public function destroy($id)
-    {
-        //
+        return back();
     }
 }
