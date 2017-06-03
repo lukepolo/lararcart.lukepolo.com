@@ -7,7 +7,6 @@
         <meta name="description" content="LaraCart - A shopping cart for Laravel">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
         <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic' rel='stylesheet' type='text/css'>
 
         @if (isset($canonical))
@@ -27,6 +26,12 @@
                 <a href="/" class="brand">
                     <img src="{{ asset('/img/laracart.png') }}" alt="LaraCart">
                 </a>
+
+                <div class="pull-right">
+                    <a href="https://github.com/lukepolo/laracart">
+                        <i class="fa fa-4x fa-github"></i>
+                    </a>
+                </div>
             </div>
         </nav>
 

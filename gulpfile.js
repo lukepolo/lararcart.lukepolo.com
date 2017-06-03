@@ -1,7 +1,5 @@
 const elixir = require('laravel-elixir');
 
-require('laravel-elixir-vue');
-
 /*
  |--------------------------------------------------------------------------
  | Elixir Asset Management
@@ -15,7 +13,9 @@ require('laravel-elixir-vue');
 
 elixir(mix => {
     mix.sass('app.scss')
-       .webpack('app.js');
-
-    mix.version(['css/app.css', 'js/app.js']);
-});
+       .webpack('app.js')
+        .version(['css/app.css', 'js/app.js'])
+        .browserSync({
+            proxy: 'laracart-docs.dev'
+        })
+})
