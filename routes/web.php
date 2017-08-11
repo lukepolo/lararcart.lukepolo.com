@@ -31,4 +31,3 @@ Route::group(['middleware' => 'auth'], function () {
 });
 
 Route::get('{version}/{page?}', 'DocsController@show');
-Route::get('/home', 'HomeController@index');
