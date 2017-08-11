@@ -108,7 +108,6 @@ class DocumentationService
     {
         return [
             'master' => 'Master',
-            '1.0' => '1.0',
         ];
     }
 }

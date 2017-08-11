@@ -7,7 +7,7 @@ use Symfony\Component\DomCrawler\Crawler;
 
 class DocsController extends Controller
 {
-    const DEFAULT_VERSION = '1.0';
+    const DEFAULT_VERSION = 'master';
 
     protected $documentationService;
 
