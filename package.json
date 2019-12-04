@@ -17,6 +17,6 @@
     "webpack": "^2.6.1"
   },
   "dependencies": {
-    "bootstrap": "^3.3.7"
+    "bootstrap": "^3.4.1"
   }
 }
